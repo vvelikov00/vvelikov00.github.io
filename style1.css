@@ -1,0 +1,129 @@
+body{
+	margin:0;
+}
+
+.header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+
+}
+
+.sidebar a.icon {
+  background: green;
+  display: block;
+  width: 20px; 
+  height: 18.5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+.menuicon{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 40px; 
+  height: 40px;
+}
+
+.sidebar {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding-top: 60px;
+  width: 200px;
+  background-color: #f1f1f1;
+  height: 100%;
+  z-index: 0;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+  .sidebar #myLinks {
+  display: block;
+  }
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+.sticky {
+  position: fixed;
+  padding-top: 60px;
+  top: 0;
+  width: 200px;
+}
+
+.sticky + .content {
+  padding-top: 30px;
+}
+
+
+.footer {
+  background-color: #777;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+   .sidebar {
+    width: 100%;
+	padding: 0;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+	
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 30px;
+}
+
+  .sidebar #myLinks {
+  display: block;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .sidebar #myLinks {
+  display: none;
+  overflow: hidden;
+}
+  
+  .sidebar a.icon{
+	  display: block;
+  }
+}

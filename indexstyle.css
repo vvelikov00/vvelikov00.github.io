@@ -1,0 +1,153 @@
+
+
+.headerindex {
+  background-color: black;
+  color: white;
+  height: 110px;
+  width: 1536px;
+  padding-top: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.btn-group button{
+    float: left;	 
+    width: 110px;
+    border: none;
+    background-color: #ffcc00;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    bottom: 0px;
+ }
+
+ .modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 30px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    
+  }
+  
+  /* The Close Button */
+  .close, .close1 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus, .close1:hover,
+  .close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Add padding to containers */
+  .registration{
+    display: grid;
+    grid-template-areas:
+      'left right'
+      'bottom bottom';
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  
+  .item1{
+      grid-area: left;
+  }
+  
+  .item2{
+      grid-area: right;
+  }
+  
+  .item3{
+      grid-area: bottom;
+  }
+  
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn, .clearbtn {
+    background-color: #ffcc00;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .sigbtn1{
+      color: blue;
+      cursor: pointer;
+  }
+  
+  .registerbtn:hover, .clearbtn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 800px) and (max-height: 600px){
+    .btn-group button{
+	
+        float: left;
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .registration {
+        display: grid;
+ grid-template-areas:
+   'left left'
+   'right right'
+   'bottom bottom';
+ grid-gap: 10px;
+ padding: 16px;
+}
+  }
+  

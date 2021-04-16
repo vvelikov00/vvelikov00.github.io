@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+  <meta charset="utf-8">
+     <title>Portfolio</title>
+     
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="smartphones_style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  </head>
+
+  <body onresize = "navbar()"> 
+    
+	<div class="header">
+        <h2>VV Tech</h2>
+      
+          </div>
+      
+      <div class="sidebar" id="sidebar">
+        <a href="index.html">Начало</a>
+        <div id="myLinks">
+          <a href="cars.html">Автомобили</a>
+          <a href="computers.html">Компютри</a>
+          <a class="highlight" href="smartphones.html">Смартфони</a>
+          <a href="tablets.html">Таблети</a>
+        </div>
+      
+          <img src="iconfinder_menu-alt_134216.png" alt="menu" class="menuicon" onclick="mobileNav()"/>
+      </div>
+          <div class="content">
+            <p class="currentpage" id="currentpage">Смартфони</p>
+            <div class="categories" >
+            <button id="all" onclick="showonly(this)">#Всички</button>
+            <button id="apple" onclick="showonly(this)">#Apple</button>
+            <button id="samsung">#Samsung</button>
+            <button id="xiaomi" onclick="showonly(this)">#Xiaomi</button>
+            <button id="huawei">#Huawei</button>
+            </div>
+            <div class="items" id="items">
+           <div class="root" data-id="ap" id="ap" onclick="location.href='iphone13.html';">
+              <img src="iPhone-13-color-1-350x350_c.jpg"/>
+              <p>IPhone 13: Всичко което знаем за предстоящия флагман на Apple</p>
+           </div>
+            <div class="root" data-id="mi" id="mi" onclick="location.href='mi11.html';">
+              <img  src="Xiaomi-Mi-11-XDA-Hands-On-2-350x350_c.jpg"/>
+              <p >Xiomi Mi11: Всичко за настоящата флагман серия</p>
+            </div>
+        
+       
+       
+            </div>
+            <div><br></div>
+               </div>  
+                 <div class="footer">Footer</div> 
+               <button onclick="topFunction()" id="topBtn">Top</button>
+    <script src="myscript.js"></script>
+</body>
+</html>  
