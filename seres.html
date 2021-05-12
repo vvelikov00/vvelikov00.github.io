@@ -48,6 +48,8 @@
               <p id="count">0</p>
               <div class="fb-share-button" data-href="https://vvelikov00.github.io/seres.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvvelikov00.github.io%2Fseres.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Споделяне</a></div>
             </div>
+
+            <p id="facebookShareLink">Facebook</p>
             <h3 class="title">Seres SF5 - първият хибриден автомобил предлаган от Huawei</h3>
             <p class="paragraph">Само преди няколко дни Huawei представи първият съвместно разработен автомобил заедно със Seres, а именно SF5. 
                 От днес той е вече в продажба, но единствено в Китай. А ето и малко повече информация за хибрида.
@@ -77,6 +79,12 @@
 <script>
   $.getJSON("https://api.countapi.xyz/hit/vvtech/seres/?amount=1", function(response) {
     $("#count").text(response.value);
+});
+</script>
+<script>
+  $("#facebookShareLink").on("click",function(){
+    var fbpopup = window.open("https://www.facebook.com/sharer/sharer.php?u=http://vv/seres.html", "pop", "width=600, height=400, scrollbars=no");
+    return false;
 });
 </script>
 </body>
