@@ -11,6 +11,33 @@
      src="https://code.jquery.com/jquery-3.6.0.min.js"
      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
      crossorigin="anonymous"></script>
+
+     <style>
+       .stat {
+padding:20px 5px;
+background:#336699;
+text-align:center;
+float:left;
+margin-left:100px;
+width:150px;
+}
+.stat-count {
+font-size: 51px;
+font-weight: normal;
+letter-spacing: -0.02em;
+line-height: 1.2;
+margin-bottom: 20px;
+overflow:hidden;
+font-family:"Georgia", Courier, monospace;
+padding: 0;
+position: relative;
+}
+.stat-detail {
+color:#fff;
+padding-top:10px;
+font: italic 1.3rem/1.75 "Georgia", Courier, monospace;
+}
+     </style>
 	  </head>
 
   <body> 
@@ -33,6 +60,13 @@
       </div>
         <div class="content" >
           <div class="article"> 
+            <div class="stat">
+
+            <span class="stat-count">4200</span>
+            
+            <p class="stat-detail">Subscribers</p>
+            
+            </div>
             <a href="https://unsplash.com/@timbatec"><img class="image" src="pepi-stojanovski-EF7BVa9BB2M-unsplash.jpg" alt="Garmin Venu 2"></a>
             <h3 class="title">Garmin Venu 2</h3>
             <p class="paragraph">На 23 април, тази година, Garmin официално представиха новият смарт часовник - Venu 2. Той се произвежда 
@@ -59,5 +93,25 @@
    
      <img src="top.png" id="topBtn" onclick="topFunction()" alt="Нагоре"/>
 <script src="myscript.js"></script>
+<script>
+  jQuery(document).ready(function() {
+function count($this){
+var current = parseInt($this.html(), 10);
+current = current + 1; /* Where 1 is increment */
+$this.html(++current);
+if(current > $this.data('count')){
+$this.html($this.data('count'));
+} else {
+setTimeout(function(){count($this)}, 50);
+}
+}
+
+jQuery(".stat-count").each(function() {
+jQuery(this).data('count', parseInt(jQuery(this).html(), 10));
+jQuery(this).html('0');
+count(jQuery(this));
+});
+});
+</script>
 </body>
 </html>
