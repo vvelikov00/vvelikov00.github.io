@@ -68,9 +68,15 @@
      <img src="top.png" id="topBtn" onclick="topFunction()" alt="Нагоре"/>
 <script src="myscript.js"></script>
 <script>
-  $.getJSON("https://api.countapi.xyz/update/mysite.com/visits", function(response) {
-    $("#count").text(response.value);
-});
+  const countEL = document.getElementById("count");
+
+  updateVisitCount();
+
+  function updateVisitCount(){
+    fetch('https://api.countapi.xyz/update/seres/seres/?amount=1')
+    .then(res=>res.json())
+    .then(res=> {countEL.innerHTML = res.value;});
+  }
 </script>
 </body>
 </html>
