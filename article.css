@@ -95,7 +95,17 @@ div.article{
     }
 
     .fb-share-button{
+      margin-top: 0.5%;
       margin-left: 0;
+      display: block;
   
+    }
+
+    .counter p, #count{
+      margin-bottom: 0.5%;
+    }
+
+    .counter{
+      height: 8vh;
     }
   }
