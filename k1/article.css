@@ -65,5 +65,7 @@ div.article{
       height: auto;
     }
 
-    
+    div.article{
+      width: 96%;
+    }
   }
