@@ -34,7 +34,11 @@
         <div class="content" >
             <div class="article">
           <a href="https://unsplash.com/@denic"> <img class="image" src="denis-cherkashin-zgUkIMKeJq4-unsplash.jpg" alt="iPhone 12"/></a>
-         <h3 class="title">IPhone 13: Всичко което знаем за предстоящия флагман на Apple</h3>
+          <div class="counter">
+            <p>Брой преглеждания:</p>
+            <p id="count">0</p>
+          </div>
+          <h3 class="title">IPhone 13: Всичко което знаем за предстоящия флагман на Apple</h3>
          <p class="paragraph">Остават само няколко месеца до премиерата на следващия топ модел смартфон на Apple. 
              С всеки изминал ден се появява все повече информация относно предстоящия флагман на "ябълката".
             В следващите няколко реда ще ви представя всичко, което е вече известно относно iPhone 13.</p>
@@ -114,5 +118,10 @@
      </div>
      <img src="top.png" id="topBtn" onclick="topFunction()" alt="Нагоре"/>
 <script src="myscript.js"></script>
+<script>
+  $.getJSON("https://api.countapi.xyz/hit/vvtech/iphone/?amount=1", function(response) {
+    $("#count").text(response.value);
+});
+</script>
 </body>
 </html>

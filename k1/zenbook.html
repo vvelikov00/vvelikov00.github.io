@@ -36,6 +36,10 @@
             <div class="article">
             <a href="https://unsplash.com/@writecodenow"><img class="image" src="boitumelo-phetla-pUK15DsdxKs-unsplash.jpg" alt="Asus Zenbook Duo"></a>
             <p class="description">Предходния Zenbook Duo</p>
+            <div class="counter">
+                <p>Брой преглеждания:</p>
+                <p id="count">0</p>
+              </div>
             <h3 class="title">Новият Asus Zenbook Duo</h3>
             <p class="paragraph"> На 14 януари, тази година, Asus представи най-новите zenbook модели - Zenbook Pro Duo 15 и Zenbook Duo 14.
                 Днес ще разгледаме по-малкият от двата модела.
@@ -65,5 +69,10 @@
        </div>
        <img src="top.png" id="topBtn" onclick="topFunction()" alt="Нагоре"/>
 <script src="myscript.js"></script>
+<script>
+    $.getJSON("https://api.countapi.xyz/hit/vvtech/zenbook/?amount=1", function(response) {
+      $("#count").text(response.value);
+  });
+  </script>
 </body>
 </html>

@@ -34,6 +34,10 @@
         <div class="content" >
           <div class="article"> 
             <a href="https://unsplash.com/@timbatec"><img class="image" src="pepi-stojanovski-EF7BVa9BB2M-unsplash.jpg" alt="Garmin Venu 2"></a>
+            <div class="counter">
+              <p>Брой преглеждания:</p>
+              <p id="count">0</p>
+            </div>
             <h3 class="title">Garmin Venu 2</h3>
             <p class="paragraph">На 23 април, тази година, Garmin официално представиха новият смарт часовник - Venu 2. Той се произвежда 
                 в два варианта - с 18mm и с 22mm кайшка, като вторият се предлага под името Venu 2S.</p>
@@ -59,5 +63,10 @@
    
      <img src="top.png" id="topBtn" onclick="topFunction()" alt="Нагоре"/>
 <script src="myscript.js"></script>
+<script>
+  $.getJSON("https://api.countapi.xyz/hit/vvtech/garminvenu/?amount=1", function(response) {
+    $("#count").text(response.value);
+});
+</script>
 </body>
 </html>

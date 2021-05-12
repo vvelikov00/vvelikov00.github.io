@@ -36,7 +36,11 @@
         <div class="content">
           <div class="article">
           <a title="X-SHLIED, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:%E5%B0%8F%E7%B1%B311_%E9%9D%92%E6%98%A5%E7%89%88.jpg"><img class="image" alt="小米11 青春版" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/%E5%B0%8F%E7%B1%B311_%E9%9D%92%E6%98%A5%E7%89%88.jpg/1024px-%E5%B0%8F%E7%B1%B311_%E9%9D%92%E6%98%A5%E7%89%88.jpg"></a>
-            <h3 class="title">Xiomi Mi11: Всичко за настоящата флагман серия</h3>
+          <div class="counter">
+            <p>Брой преглеждания:</p>
+            <p id="count">0</p>
+          </div>  
+          <h3 class="title">Xiomi Mi11: Всичко за настоящата флагман серия</h3>
 
             <p class="paragraph">Както беше обещано, Xiaomi представи Mi 11 в Китай на 28 декември, като ни покажа 
               неговите дизайн и спецификации. Няколко месеца по-късно, китйската компания добави още пет устройства към серията
@@ -131,5 +135,10 @@
              </div>
              <img src="top.png" id="topBtn" onclick="topFunction()" alt="Нагоре"/>
 <script src="myscript.js"></script>
+<script>
+  $.getJSON("https://api.countapi.xyz/hit/vvtech/mi11/?amount=1", function(response) {
+    $("#count").text(response.value);
+});
+</script>
 </body>
 </html>

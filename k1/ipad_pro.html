@@ -34,6 +34,10 @@
         <div class="content" >
             <div class="article">
             <a href="https://unsplash.com/@alexandar_todov"><img class="image" src="alexandar-todov-HgUs5r7q_0M-unsplash1.jpg" alt="iPad Pro"></a>
+            <div class="counter">
+                <p>Брой преглеждания:</p>
+                <p id="count">0</p>
+              </div>
             <h3 class="title">IPad Pro: Първият таблет от Apple с M1 чип</h3>
             <p class="paragraph">Само преди няколко дни, на 20 април, Apple представи последният модел от серията iPad. Външно новият 
                 Pro не се различава съществено от предходния модел, но отвътре разликата е огромна.
@@ -62,5 +66,10 @@
        </div>
        <img src="top.png" id="topBtn" onclick="topFunction()" alt="Нагоре"/>
 <script src="myscript.js"></script>
+<script>
+    $.getJSON("https://api.countapi.xyz/hit/vvtech/ipadpro/?amount=1", function(response) {
+      $("#count").text(response.value);
+  });
+  </script>
 </body>
 </html>
