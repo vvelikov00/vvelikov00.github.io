@@ -1,0 +1,24 @@
+.header_index{
+    width: 100%;
+    height: 50vh;
+    background-image: url("martin-shreder-5Xwaj9gaR0g-unsplash.jpg");
+    background-size: cover;
+    background-position: 60% 30%;
+    transition:  0.5s;
+}
+
+.header_index img{
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+    width: 25%;
+    height: auto;
+    margin-left: 2%;
+    cursor: pointer;
+
+  }
+
+.tiny {
+    background-position: 0% 40%;
+    height: 25vh;
+  }

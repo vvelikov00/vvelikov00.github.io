@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+  <meta charset="utf-8">
+     <title>Portfolio</title>
+     
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="route.css">
+   <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+	  </head>
+
+  <body onresize = "navbar()"> 
+    
+	<div class="header">
+    <img src="vvtech.png " onclick="location.href='index.html';" alt="VV Tech"/>
+          </div>
+      
+      <div class="navbar" id="navbar">
+        <p class="menu">Меню</p>
+        <div id="myLinks">
+        <a href="index.html">Начало</a>
+          <a href="cars.html">Автомобили</a>
+          <a href="computers.html">Компютри</a>
+          <a  href="smartphones.html">Смартфони</a>
+          <a href="tablets.html">Таблети</a>
+          <a style="background-color: #FC9803;" href="watches.html">Часовници</a>
+        </div>
+      
+          <img src="iconfinder_menu-alt_134216.png" alt="menu" class="menuicon" onclick="mobileNav()"/>
+      </div>
+          <div class="content">
+            <div class="categories" >
+            <button id="all" onclick="showonly(this)">#Всички</button>
+            <button id="apple" onclick="showonly(this)">#Apple</button>
+            <button id="garmin" onclick="showonly(this)">#Garmin</button>
+            <button id="samsung" onclick="showonly(this)">#Samsung</button>
+            <button id="huawei" onclick="showonly(this)">#Huawei</button>
+            </div>
+            <div class="route" data-id="garmin" onclick="location.href='garmin_venu.html';">
+                <img src="pepi-stojanovski-EF7BVa9BB2M-unsplash1.jpg" alt="Garmin Venu 2"/>
+                <p>Garmin Venu 2</p>
+             </div>
+
+            </div>
+       
+       
+           
+               
+            <div class="footer">
+              <p>Изработка и дизайн: Виктор Великов</p>
+              <a href="https://www.facebook.com/vvelikov.00" target="_blank"><img class="socialmedia" src="facebook.png" alt="facebook" /></a>
+              <a href="https://www.instagram.com/v.velikov00" target="_blank"><img class="socialmedia" src="instagram.png" alt="instagram"/></a>
+         </div>
+                    <img src="top.png" id="topBtn" onclick="topFunction()" alt="Нагоре"/>
+    <script src="myscript.js"></script>
+</body>
+</html> 

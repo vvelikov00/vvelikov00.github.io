@@ -1,0 +1,270 @@
+body{
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+  
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 1px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #212121; 
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #212121; 
+  }
+
+  .header {
+    background-image: url("martin-shreder-5Xwaj9gaR0g-unsplash.jpg");
+    background-size: cover;
+    background-position: 0% 40%;
+    color: white;
+    width: 100%;
+    height: 22vh;
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: left;
+  }
+  
+  .header img{
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+    width: 25%;
+    height: auto;
+    margin-left: 2%;
+    cursor: pointer;
+  }
+.menuicon{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 40px; 
+  height: 40px;
+  display: none;
+}
+
+.navbar{
+
+  width: 100%;
+  background-color: #ffcc00;
+  height: auto;
+  z-index: 99;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar a, .menu{
+  position: relative;
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+  .navbar a:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    
+    background: rgb(0, 0, 0);
+    transition: width .3s ease;
+    -webkit-transition: width .3s ease;
+  }
+  
+  .navbar a:hover:after{
+    width: 100%;
+    left: 0;
+    background: #fff;
+  }
+
+
+  .menu{
+    display: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+
+div.content{
+  background-color: #f4ecec;
+  width: 100%;
+  text-align: center;
+  min-height: 100vh;
+  color: #212121;
+  padding-bottom: 20px;
+}
+
+.footer{
+  position: absolute;
+  margin-top: 0;
+  width: 100%;
+  background-color: #212121;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  height: 7vh;
+}
+
+ 
+.categories{
+  padding-top: 1%;
+  text-align: center;
+}
+
+
+.categories button{
+  background-color: #f4ecec;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+.categories button:hover{
+  background-color: rgb(56, 56, 56);
+  border: 1px solid black;
+  color: white;
+}
+
+
+.highlight{
+  background-color: #FC9803;
+  padding-top: 0px; 
+  padding-bottom: 0px;
+}
+
+#topBtn{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  margin-left: 20px;
+  z-index: 99;
+  width:3vw;
+  height: auto;
+  background-color: #212121;
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#topBtn:hover {
+  background-color: #555;
+}
+
+p a{
+  color: #212121;
+  
+}
+
+.footer p{
+    display: inline;
+  }
+
+.socialmedia{
+    display: inline;
+    width: 2.7vw;
+    margin-left: 20px;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    padding-top: 5px;
+  }
+  
+  .socialmedia:hover{
+    width: 3.3vw;
+    padding-top: 2px;
+    transition: 0.2s;
+  }
+   
+
+@media only screen and (max-width: 900px){
+
+	body{
+    width: auto;
+  }
+  
+  .header{
+    height: 15vh;
+    background-position: 0% 33%;
+  }
+
+  .header img{
+    width: 40%;
+    height: auto;
+  }
+
+  #topBtn{
+      width: 6vw;
+  }
+
+	div.content{
+    width: 100%; 
+	}
+
+  .footer{
+    width: 100%;
+  }
+  .navbar {
+    position: absolute;
+    width: 100%;
+    height: auto;
+      padding: 0;
+    margin-left: 0px;
+    position: relative;
+  }
+
+  
+  .menu{
+    display: block;
+  }
+    
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a{
+    display: block;
+    text-align: center;
+
+  }
+  .navbar #myLinks {
+  display: none;
+  overflow: hidden;
+}
+
+.menuicon{
+    display: block;
+}
+
+.socialmedia{
+  width: 4.7vw;
+}
+
+.socialmedia:hover{
+  width: 5.3vw;
+}
+
+}
