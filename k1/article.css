@@ -38,7 +38,7 @@ div.article{
   
   
   .paragraph{
-  
+    text-align: justify;
     font-size: 18px;
     line-height: 95%;
     margin-left: 20px;
