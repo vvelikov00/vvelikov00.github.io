@@ -93,4 +93,9 @@ div.article{
     div.article{
       width: 100%;
     }
+
+    .fb-share-button{
+      margin-left: 0.5%;
+  
+    }
   }
