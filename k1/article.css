@@ -60,7 +60,7 @@ div.article{
 
   @media only screen and (max-width: 800px) and (max-height: 600px){
     .image{
-      width: 95%;
+      width: 90%;
       height: auto;
     }
 
