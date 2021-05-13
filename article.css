@@ -16,12 +16,7 @@ div.article{
     height: auto;
     object-fit: contain;
   }
-  
-  .c1{
-    display: inline;
 
-   
-  }
 
   .counter{
     display: block;
