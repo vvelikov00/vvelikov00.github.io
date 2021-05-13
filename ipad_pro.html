@@ -2,8 +2,8 @@
 <html lang="bg">
   <head>
   <meta charset="utf-8">
-     <title>Portfolio</title>
-     
+     <title>IPad Pro: Първият таблет от Apple с M1 чип</title>
+     <link rel="icon" href="cogwheel.png" type="image/gif">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="article.css">
@@ -11,10 +11,17 @@
      src="https://code.jquery.com/jquery-3.6.0.min.js"
      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
      crossorigin="anonymous"></script>
+     <meta property="og:url"           content="https://vvelikov00.github.io/ipad_pro.html" />
+     <meta property="og:type"          content="website" />
+     <meta property="og:title"         content="IPad Pro: Първият таблет от Apple с M1 чип" />
+     <meta property="og:description"   content="Само преди няколко дни, на 20 април, Apple представи последният модел от серията iPad. Външно новият 
+     Pro не се различава съществено от предходния модел, но отвътре разликата е огромна." />
+     <meta property="og:image"         content="https://vvelikov00.github.io/alexandar-todov-HgUs5r7q_0M-unsplash1.jpg" />
 	  </head>
 
   <body> 
-    
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v10.0" nonce="LmIMI8BD"></script>
 	<div class="header">
         <img src="vvtech.png " onclick="location.href='index.html';" alt="VV Tech"/>
           </div>
@@ -57,6 +64,10 @@
             </p>
                 <p class="source">Снимки:<a href="https://unsplash.com/" target="_blank">Unsplash</a>
                     <br><a href="https://unsplash.com/@alexandar_todov" target="_blank">Снимка на статията</a></p>
+                    <div class="fb-share-button" data-href="https://vvelikov00.github.io/ipad_pro.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvvelikov00.github.io%2Fipad_pro.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Споделяне</a></div>
+                    <a class="twitter-share-button"
+                    href="https://twitter.com/intent/tweet">
+                     Tweet</a>
                 </div>
         </div>
         <div class="footer">
@@ -71,5 +82,21 @@
       $("#count").text(response.value);
   });
   </script>
+  <script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+  
+    return t;
+  }(document, "script", "twitter-wjs"));</script>
 </body>
 </html>

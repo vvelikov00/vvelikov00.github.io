@@ -82,14 +82,9 @@ div.article{
     margin-right: 2%;
   }
 
-  .share{
-    text-align: left;
-  }
-
   .fb-share-button{
     vertical-align: middle;
     display: inline-block;
-    margin-left: 2%;
   }
   .twitter-share-button{
     margin-left: 1%;
@@ -103,9 +98,4 @@ div.article{
     div.article{
       width: 100%;
     }
-
- .share{
-   text-align: center;
- }
-
   }
