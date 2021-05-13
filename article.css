@@ -93,6 +93,7 @@ div.article{
   }
   .twitter-share-button{
     margin-left: 1%;
+    display: inline-block;
     vertical-align: middle;
   }
 
