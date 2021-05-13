@@ -15,15 +15,16 @@
   crossorigin="anonymous"></script>
 
   <script>
-    $(document).ready(function(){
-           $("#result").append($("<span>").load("cars.html .content div:nth-of-type(2)"));           
-           $("#result").append($("<span>").load("computers.html .content div:nth-of-type(2)"));
-           $("#result").append($("<span>").load("smartphones.html .content div:nth-of-type(2)"));
-           $("#result").append($("<span>").load("tablets.html .content div:nth-of-type(2)"));
-            $("#result").append($("<span>").load("watches.html .content div:nth-of-type(2)"));
-
-
-    });
+/*jslint browser:true */
+/*global $, jQuery, alert*/
+$(document).ready(function () {
+    'use strict';
+    $("#result").append($("<span>").load("cars.html .content div:nth-of-type(2)"));
+    $("#result").append($("<span>").load("computers.html .content div:nth-of-type(2)"));
+    $("#result").append($("<span>").load("smartphones.html .content div:nth-of-type(2)"));
+    $("#result").append($("<span>").load("tablets.html .content div:nth-of-type(2)"));
+    $("#result").append($("<span>").load("watches.html .content div:nth-of-type(2)"));
+});
     </script>
 	  </head>
 
@@ -62,46 +63,50 @@
 <img src="top.png" id="topBtn" onclick="topFunction()" alt="Нагоре"/>
   <script src="myscript.js"></script>
   <script>
-    window.onscroll = function() {scrollFunction(), stickybar(), header()};
-
-
+    /*jslint browser:true */
+/*global $, jQuery, alert*/
 var mybutton = document.getElementById("topBtn");
 
-
-
 function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  mybutton.style.display = "block";
-} else {
-  mybutton.style.display = "none";
-}
+    'use strict';
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
 }
 
 
 function topFunction() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
+    'use strict';
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 
 
 var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop/2;
+var sticky = navbar.offsetTop / 2;
+
 function stickybar() {
-if (window.pageYOffset > sticky) {
-  navbar.classList.add("sticky");
-} else{
-  navbar.classList.remove("sticky");
-}
+    'use strict';
+    if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
 }
 
 function header() {
-if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
- document.getElementById("header").classList.add("tiny");
-} else {
-  document.getElementById("header").classList.remove("tiny");
+    'use strict';
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").classList.add("tiny");
+    } else {
+        document.getElementById("header").classList.remove("tiny");
+    }
 }
-}
+
+window.onscroll = function () {'use strict'; scrollFunction(); stickybar(); header(); };
   </script>
   </body>
 </html>  

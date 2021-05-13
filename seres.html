@@ -20,7 +20,11 @@
 
   <body> 
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v10.0" nonce="LcThe9zS"></script>
+      <script 
+        async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v10.0" 
+        nonce="LcThe9zS">
+      </script>
 	<div class="header">
     <img src="vvtech.png " onclick="location.href='index.html';" alt="VV Tech"/>   
           </div>
@@ -65,10 +69,13 @@
                 </p>
                 <p class="source">Снимки:<a href="https://commons.wikimedia.org/" target="_blank">Wikimedia</a>
                     <br><a href="https://unsplash.com/@zacwolff" target="_blank">Снимка на статията</a></p>
-                    
-                    <div class="fb-share-button" data-href="https://vvelikov00.github.io/seres.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvvelikov00.github.io%2Fseres.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Споделяне</a></div>
+                    <div class="fb-share-button" 
+                      data-href="https://vvelikov00.github.io/seres.html" 
+                      data-layout="button" data-size="small">
+                      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvvelikov00.github.io%2Fseres.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Споделяне</a>
+                    </div>
                     <a class="twitter-share-button"
-                     href="https://twitter.com/intent/tweet">
+                       href="https://twitter.com/intent/tweet">
                       Tweet</a>
                   </div>
         </div>
@@ -80,26 +87,34 @@
      <img src="top.png" id="topBtn" onclick="topFunction()" alt="Нагоре"/>
 <script src="myscript.js"></script>
 <script>
-  $.getJSON("https://api.countapi.xyz/hit/vvtech/seres/?amount=1", function(response) {
+/*jslint browser:true */
+/*global $, jQuery, alert*/
+$.getJSON("https://api.countapi.xyz/hit/vvtech/seres/?amount=1", function (response) {
+    'use strict';
     $("#count").text(response.value);
 });
+
+window.twttr = (function (d, s, id) {
+    'use strict';
+    var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+    if (d.getElementById(id)) {return t; }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    /*jslint nomen: true*/
+    t._e = [];
+    /*jslint nomen: false*/
+    t.ready = function (f) {
+        /*jslint nomen: true*/
+        t._e.push(f);
+        /*jslint nomen: false*/
+    };
+
+    return t;
+}(document, "script", "twitter-wjs"));
 </script>
-<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-}(document, "script", "twitter-wjs"));</script>
 
 </body>
 </html>

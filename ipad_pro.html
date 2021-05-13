@@ -21,7 +21,11 @@
 
   <body> 
     <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v10.0" nonce="LmIMI8BD"></script>
+      <script 
+        async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v10.0" 
+        nonce="LmIMI8BD">
+      </script>
 	<div class="header">
         <img src="vvtech.png " onclick="location.href='index.html';" alt="VV Tech"/>
           </div>
@@ -64,7 +68,11 @@
             </p>
                 <p class="source">Снимки:<a href="https://unsplash.com/" target="_blank">Unsplash</a>
                     <br><a href="https://unsplash.com/@alexandar_todov" target="_blank">Снимка на статията</a></p>
-                    <div class="fb-share-button" data-href="https://vvelikov00.github.io/ipad_pro.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvvelikov00.github.io%2Fipad_pro.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Споделяне</a></div>
+                    <div class="fb-share-button" 
+                      data-href="https://vvelikov00.github.io/ipad_pro.html" 
+                      data-layout="button" data-size="small">
+                      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvvelikov00.github.io%2Fipad_pro.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Споделяне</a>
+                    </div>
                     <a class="twitter-share-button"
                     href="https://twitter.com/intent/tweet">
                      Tweet</a>
@@ -78,25 +86,31 @@
        <img src="top.png" id="topBtn" onclick="topFunction()" alt="Нагоре"/>
 <script src="myscript.js"></script>
 <script>
-    $.getJSON("https://api.countapi.xyz/hit/vvtech/ipadpro/?amount=1", function(response) {
-      $("#count").text(response.value);
+/*jslint browser:true */
+/*global $, jQuery, alert*/
+ $.getJSON("https://api.countapi.xyz/hit/vvtech/ipadpro/?amount=1", function (response) {
+    'use strict';
+    $("#count").text(response.value);
   });
-  </script>
-  <script>window.twttr = (function(d, s, id) {
+  window.twttr = (function (d, s, id) {
+    'use strict';
     var js, fjs = d.getElementsByTagName(s)[0],
-      t = window.twttr || {};
-    if (d.getElementById(id)) return t;
+        t = window.twttr || {};
+    if (d.getElementById(id)) {return t; }
     js = d.createElement(s);
     js.id = id;
     js.src = "https://platform.twitter.com/widgets.js";
     fjs.parentNode.insertBefore(js, fjs);
-  
+    /*jslint nomen: true*/
     t._e = [];
-    t.ready = function(f) {
-      t._e.push(f);
+    /*jslint nomen: false*/
+    t.ready = function (f) {
+        /*jslint nomen: true*/
+        t._e.push(f);
+        /*jslint nomen: false*/
     };
-  
+
     return t;
-  }(document, "script", "twitter-wjs"));</script>
+}(document, "script", "twitter-wjs"));</script>
 </body>
 </html>
