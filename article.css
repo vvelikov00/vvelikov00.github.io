@@ -17,9 +17,8 @@ div.article{
   }
   
   .c1{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    display: inline;
+
    
   }
 
@@ -111,9 +110,13 @@ div.article{
    .c1{
      margin-bottom: 0;
      display: block;
+
+   }
+   .counter p, #count{
+     top: 0;
    }
 
     .counter{
-      height: 8vh;
+      height: auto;
     }
   }
