@@ -85,11 +85,13 @@ div.article{
   .fb-share-button{
     vertical-align: middle;
     display: inline-block;
+    margin-bottom: 1%;
   }
   .twitter-share-button{
     margin-left: 1%;
     display: inline-block;
     vertical-align: middle;
+    margin-bottom: 1%;
   }
 
 
