@@ -80,5 +80,10 @@ function stickybar() {
   }
 }
 
+window.onload = function(){
+  var x = document.getElementsByClassName("fb-share-button")[0].clientHeight;
+  alert(x);
+}
+
 window.onresize = function () {'use strict'; mobnavbar(); };
 window.onscroll = function () {'use strict'; scrollFunction(); stickybar(); };
