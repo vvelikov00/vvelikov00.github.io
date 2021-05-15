@@ -80,7 +80,5 @@ function stickybar() {
   }
 }
 
-
-
 window.onresize = function () {'use strict'; mobnavbar(); };
 window.onscroll = function () {'use strict'; scrollFunction(); stickybar(); };

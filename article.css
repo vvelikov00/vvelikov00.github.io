@@ -94,6 +94,10 @@ div.article{
     margin-bottom: 1%;
   }
 
+  .fbtw{
+    height: 20px;
+  }
+
 
 
   @media only screen and (max-width: 900px){
